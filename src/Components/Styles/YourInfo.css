@@ -1,0 +1,20 @@
+.your-info-page {
+    margin-left: 40px;
+}
+
+.title h1 {
+
+}
+
+.title h3 {
+    color: gray;
+}
+
+.info-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-form input {
+    max-width: 300px;
+}
