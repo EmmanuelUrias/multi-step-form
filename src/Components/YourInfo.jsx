@@ -1,7 +1,11 @@
 import React from 'react'
+import NextStepBtn from './NextStepBtn'
 import './Styles/YourInfo.css'
+import { Link } from 'react-router-dom'
 
 function YourInfo() {
+
+
   return (
     <div className='your-info-page'>
         <div className='title'>
@@ -18,6 +22,11 @@ function YourInfo() {
                 <label htmlFor="phone-input" className="phone-label">Phone Number</label>
                 <input id="phone-input" type="text" className="phone-input" />
             </form>
+            <div>
+              <Link to='/select-plan'>
+                <NextStepBtn />
+              </Link>
+            </div>
     </div>
   )
 }
