@@ -1,8 +1,15 @@
 import React from 'react'
+import './Styles/FormPage.css'
 
-function FormPage() {
+function FormPage(props) {
+    const showPage = props.showPage
+    
   return (
-    <div>FormPage</div>
+    <div>
+        <div className={showPage ? "step-page" : "hide"}>
+            {props.page}
+        </div>
+    </div>
   )
 }
 

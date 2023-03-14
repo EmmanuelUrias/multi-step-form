@@ -4,6 +4,10 @@ import YourInfo from './YourInfo'
 import SelectPlan from './SelectPlan'
 import AddOns from './AddOns'
 import Summary from './Summary'
+import FormPage from './FormPage'
+import './Styles/SideBar.css'
+import NextStepBtn from './NextStepBtn'
+import GoBackBtn from './GoBackBtn'
 
 function SideBar() {
     let steps = [
@@ -38,17 +42,46 @@ function SideBar() {
         }
     ]
 
+    if(steps.id === 1) {
+        let hide = 'hide'
+    }
+
+
   return (
-    <div>
+    <div className='form-page'>
+        <div className='side-bar'>
         {steps.map(steps => (
-            <SideBarSteps 
-                id={steps.id}
-                step={steps.step}
-                page={steps.page}
-                title={steps.title}
-                showPage={steps.showPage}
-            />
+            <div>
+                <SideBarSteps 
+                    id={steps.id}
+                    step={steps.step}
+                    page={steps.page}
+                    title={steps.title}
+                    showPage={steps.showPage}
+                />
+            </div>                
         ))}
+        </div>
+        <div className="form">
+        {steps.map(steps => (
+            <div>
+                <FormPage 
+                 page={steps.page}
+                 showPage={steps.showPage}
+                />
+                <NextStepBtn
+                id={steps.id}
+                steps={steps}
+                showPage={steps.showPage}
+                />
+                <GoBackBtn 
+                steps={steps}
+                showPage={steps.showPage}
+                />
+            </div>
+
+        ))}
+        </div>
     </div>
   )
 }

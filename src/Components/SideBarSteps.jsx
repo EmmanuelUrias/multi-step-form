@@ -1,19 +1,24 @@
 import React from 'react'
+import './Styles/SideBarSteps.css'
 
 
 function SideBarSteps(props) {
     const showPage = props.showPage
 
   return (
-    <div>
+    <div className='steps-page'>
         <div className="step-wrapper">
-            <div className={showPage ? "number-bubble-highlighted" : "number-bubble"}>{props.id}</div>
-            <div className="step-number">{props.step}</div>
-            <div className="step-title">{props.title}</div>
+            <div className={showPage ? "number-bubble-highlighted" : "number-bubble"}>
+              <div className='number'>
+              {props.id}
+              </div>
+            </div>
+            <div className='text-container'>
+              <div className="step-number">{props.step}</div>
+              <div className="step-title">{props.title}</div>
+            </div>
         </div>
-        <div className={showPage ? "step-page" : "hide"}>
-            {props.page}
-        </div>
+
     </div>
   )
 }

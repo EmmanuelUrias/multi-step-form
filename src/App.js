@@ -1,9 +1,9 @@
-import YourInfo from './Components/YourInfo';
+import SideBar from "./Components/SideBar";
 
 function App() {
   return (
-    <div className="App">
-      <YourInfo />
+    <div>
+      <SideBar />
     </div>
   );
 }

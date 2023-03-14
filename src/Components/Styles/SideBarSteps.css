@@ -1,0 +1,60 @@
+.steps-page {
+    display: flex;
+    flex-direction: column;  
+    margin-left: 40px;  
+}
+
+.step-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 300px;
+    height: 85px;
+}
+
+.text-container {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    margin-top: 10px;
+}
+
+.step-number {
+    padding-bottom: 5px;
+    color: gray;
+    font-size: small;
+}
+
+.number-bubble-highlighted {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 60px;
+    background-color: aliceblue;
+    color: black;
+    flex: -1;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.number-bubble {
+    height: 40px;
+    width: 40px;
+    border-radius: 60px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    flex: -1;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.number {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
