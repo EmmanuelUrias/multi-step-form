@@ -1,13 +1,12 @@
 import React from 'react'
+import './Styles/NextStepBtn.css'
 
-function NextStepBtn(props) {
+function NextStepBtn() {
     
   return (
-    <div>
-      <button>
+      <button className='next-step-btn'>
         Next Step
       </button>
-    </div>
   )
 }
 

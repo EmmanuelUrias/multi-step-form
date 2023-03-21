@@ -1,0 +1,101 @@
+.summary-page {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.title-info h1{
+    color: darkblue;
+
+}
+.title-info h3{
+    color: gray;
+}
+
+.total-price {
+    background-color: rgb(227, 235, 241);
+    border-radius: 12px;
+    padding-bottom: 10px;
+}
+
+.plan-summary{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+.plan-summary h2 {
+    font-size: 18px;
+    margin-left: 200px;
+    margin-top: 20px;
+    color: darkblue;
+}
+.plan-selection{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.plan-selection h1{
+    font-size: 18px;
+    color: darkblue;
+}
+.plan-selection a {
+    font-size: 16px;
+    color: darkblue;
+
+}
+
+.border-line {
+    border-bottom: 2px solid rgba(193, 191, 191, 0.5);
+    width: 410px;
+    margin-left: 30px;
+}
+
+.summary-add-on {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+.summary-add-on h1{
+    font-size: 16px;
+    color: gray;
+}
+.summary-add-on-price-1 {
+    font-size: 15px;
+    margin-left: 238px;
+    color: darkblue;
+}
+.summary-add-on-price-2 {
+    font-size: 15px;
+    margin-left: 235px;
+    color: darkblue;
+}
+
+.price-summary{
+    display: flex;
+    flex-direction: row;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+.price-summary h1 {
+    font-size: 16px;
+}
+.price-summary h2 {
+    font-size: 18px;
+    margin-left: 194px;
+    color: darkblue;
+
+}
+
+.summary-back-btn {
+    margin-top: 100px
+}
+.summary-confirm-btn {
+    margin-left: 400px;
+    margin-top: -30px;
+}
+.summary-confirm-btn button {
+    padding: 9px;
+    background-color: darkblue;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+}
