@@ -1,7 +1,10 @@
 .next-step-btn {
-    padding: 9px;
-    background-color: darkblue;
-    color: white;
-    font-size: 15px;
+    padding: 14px 20px;
+    background-color: rgb(1, 1, 99);
+    color: rgb(236, 234, 234);
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 8px;
+    font-family: "Gill Sans", sans-serif;
+    cursor: pointer;
 }

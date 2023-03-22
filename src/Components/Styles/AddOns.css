@@ -1,102 +1,119 @@
 .add-ons-page {
-    margin-left: 70px;
+    margin-left: 90px;
+    margin-top: 30px;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .title-text {
     margin-top: 45px;
 }
 .title-text h1 {
-    
+    font-weight: 670;
+    color: rgb(1, 1, 99);
 }
 .title-text h3 {
-    color: gray;
-    margin-top: -8px;
-    font-size: 17px;
+    margin-top: -12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #797979c3;
 }
 
 .checklist{
     margin-top: 40px;
-    width: 470px;
+    width: 450px;
 }
 
 .checklist-container{
     display: flex;
     flex-direction: row;
-    border: 1px solid darkblue;
+    border: 1px solid blueviolet;
     border-radius: 8px;
     margin-bottom: 15px;
     padding-left: 18px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    cursor: pointer;
 }
 .checklist-container input {
     width: 18px;
+    cursor: pointer;
 }
 .checklist-container-text{
     margin-left: 20px;
-
 }
 .checklist-container h1 {
     font-size: 18px;
+    font-weight: 600;
     color: rgb(6, 6, 94);
 }
 .checklist-container h2 {
     font-size: 15px;
-    color: darkblue;
+    font-weight: 600;
+    color: blueviolet;
+    margin-top: 24px;
 }
 .checklist-container h3 {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: -10px;
-    color: gray;
+    color: #797979c3;
+    font-weight: 600;
 }
 
 .price-1 {
-    margin-left: 142px;
-    margin-top: 25px;
+    margin-left: 112px;
+    margin-top: 22px;
+    color: blueviolet;
 }
 .price-2 {
-    margin-left: 175px;
-    margin-top: 25px;
+    margin-left: 145px;
+    margin-top: 22px;
+    color: blueviolet;
 }
 .price-3 {
-    margin-left: 132px;
-    margin-top: 25px;
+    margin-left: 102px;
+    margin-top: 22px;
+    color: blueviolet;
 }
 
 .next-button {
-    margin-left: 385px;
-    margin-top: -25px;
+    margin-left: 325px;
+    margin-top: -40px;
 }
 
 .go-back-button {
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
 .container-highlight {
     background-color: rgb(156, 156, 243, 0.1);
-    border: 1px solid darkblue;
+    border: 1px solid blueviolet;
     display: flex;
     flex-direction: row;
-    border: 1px solid darkblue;
     border-radius: 8px;
     margin-bottom: 15px;
     padding-left: 18px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    cursor: pointer;
 }
 .container-highlight input {
     width: 18px;
+    cursor: pointer;
 }
 .container-highlight h1 {
     font-size: 18px;
+    font-weight: 600;
     color: rgb(6, 6, 94);
 }
 .container-highlight h2 {
     font-size: 15px;
-    color: darkblue;
+    font-weight: 600;
+    color: blueviolet;
+    margin-top: 24px;
 }
 .container-highlight h3 {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: -10px;
-    color: gray;
+    color: #797979c3;
+    font-weight: 600;
 }

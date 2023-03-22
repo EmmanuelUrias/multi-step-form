@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import GoBackBtn from './GoBackBtn'
+import SideBarSteps from './SideBarSteps'
 import './Styles/Summary.css'
 import ThankYou from './ThankYou'
 
 function Summary() {
+  const [showStep1, setShowStep1] = useState(false)
+  const [showStep2, setShowStep2] = useState(false)
+  const [showStep3, setShowStep3] = useState(false)
+  const [showStep4, setShowStep4] = useState(true)
+
   const [isConfirmed, setIsComfirmed] = useState(false)
 
   const handleClick = () => {
@@ -12,6 +18,15 @@ function Summary() {
   }
 
   return (
+    <div className='form-page'>
+            <div>
+        <SideBarSteps
+         showStep1 = {showStep1}
+         showStep2 = {showStep2}
+         showStep3 = {showStep3}
+         showStep4 = {showStep4}
+         />
+      </div>
     <div className='summary-thankyou-page'>
       { isConfirmed ? <ThankYou /> :
           <div className='summary-page'>
@@ -33,11 +48,11 @@ function Summary() {
        </div>
        <div className='border-line'></div>
        <div className="summary-add-on">
-         <h1>online service</h1>
+         <h1>Online service</h1>
          <h2 className='summary-add-on-price-1'>+$1/mo</h2>
        </div>
        <div className="summary-add-on">
-       <h1>larger storage</h1>
+       <h1>Larger storage</h1>
          <h2 className='summary-add-on-price-2'>+$2/mo</h2>
        </div>
      </div>
@@ -55,6 +70,7 @@ function Summary() {
      </div>
     </div>}
   </div>
+    </div>
   )
 }
 

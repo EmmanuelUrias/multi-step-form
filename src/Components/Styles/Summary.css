@@ -1,20 +1,25 @@
 .summary-page {
-    margin-left: 60px;
-    margin-top: 50px;
+    margin-left: 90px;
+    margin-top: 75px;
+    font-family: "Gill Sans", sans-serif;
+    width: 450px;
 }
 
 .title-info h1{
-    color: darkblue;
-
+    font-weight: 670;
+    color: rgb(1, 1, 99);
 }
 .title-info h3{
-    color: gray;
-}
+    margin-top: -12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #797979c3;}
 
 .total-price {
     background-color: rgb(227, 235, 241);
     border-radius: 12px;
     padding-bottom: 10px;
+    margin-top: 35px;
 }
 
 .plan-summary{
@@ -24,9 +29,9 @@
 }
 .plan-summary h2 {
     font-size: 18px;
-    margin-left: 200px;
+    margin-left: 180px;
     margin-top: 20px;
-    color: darkblue;
+    color: rgb(1, 1, 99);
 }
 .plan-selection{
     display: flex;
@@ -35,12 +40,12 @@
 }
 .plan-selection h1{
     font-size: 18px;
-    color: darkblue;
+    color: rgb(1, 1, 99);
 }
 .plan-selection a {
     font-size: 16px;
-    color: darkblue;
-
+    color: blueviolet;
+    cursor: pointer;
 }
 
 .border-line {
@@ -55,18 +60,19 @@
     margin-left: 30px;
 }
 .summary-add-on h1{
-    font-size: 16px;
-    color: gray;
+    font-size: 17px;
+    color: #797979c3;
+    font-weight: 600;
 }
 .summary-add-on-price-1 {
     font-size: 15px;
-    margin-left: 238px;
-    color: darkblue;
+    margin-left: 228px;
+    color: rgba(1, 1, 99, 0.642);
 }
 .summary-add-on-price-2 {
     font-size: 15px;
-    margin-left: 235px;
-    color: darkblue;
+    margin-left: 225px;
+    color: rgba(1, 1, 99, 0.642);
 }
 
 .price-summary{
@@ -77,25 +83,33 @@
 }
 .price-summary h1 {
     font-size: 16px;
+    color: #797979c3;
+    font-weight: 600;
 }
 .price-summary h2 {
-    font-size: 18px;
-    margin-left: 194px;
-    color: darkblue;
+    font-size: 19px;
+    margin-left: 185px;
+    color: blueviolet;
 
 }
 
 .summary-back-btn {
-    margin-top: 100px
+    margin-top: 90px
 }
 .summary-confirm-btn {
-    margin-left: 400px;
-    margin-top: -30px;
+    margin-left: 340px;
+    margin-top: -35px;
 }
 .summary-confirm-btn button {
-    padding: 9px;
-    background-color: darkblue;
-    color: white;
-    font-size: 15px;
+    padding: 14px 20px;
+    background-color: blueviolet;
+    color: rgb(236, 234, 234);
+    font-size: 18px;
+    font-weight: 600;
     border-radius: 8px;
+    font-family: "Gill Sans", sans-serif;
+    cursor: pointer;
+}
+.summary-confirm-btn button:hover {
+    opacity: .65;
 }

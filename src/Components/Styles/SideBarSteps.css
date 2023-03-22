@@ -1,37 +1,43 @@
 .steps-page {
     display: flex;
     flex-direction: column;  
-    margin-left: 40px;  
+    margin-left: 35px;  
 }
 
 .step-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    width: 300px;
-    height: 85px;
+    width: 180px;
+    height: 75px;
 }
 
 .text-container {
-    color: aliceblue;
+    color: rgb(230, 238, 245);
     display: flex;
     flex-direction: column;
     flex: 6;
-    margin-top: 10px;
+    margin-top: 8px;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.step-title {
+    font-weight: 650;
+    font-size: 13px;
 }
 
 .step-number {
-    padding-bottom: 5px;
-    color: gray;
-    font-size: small;
+    padding-bottom: 6px;
+    color: rgb(210, 210, 210);
+    font-size: 13px;
 }
 
 .number-bubble-highlighted {
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     border: 1px solid white;
     border-radius: 60px;
-    background-color: aliceblue;
+    background-color: rgb(192, 221, 243);
     color: black;
     flex: -1;
     margin-top: 10px;
@@ -39,8 +45,8 @@
 }
 
 .number-bubble {
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     border-radius: 60px;
     background-color: transparent;
     color: white;
@@ -51,10 +57,54 @@
 }
 
 .number {
-    margin-left: 15px;
-    margin-top: 10px;
+    margin-left: 13px;
+    margin-top: 8px;
+    font-weight: 600;
 }
 
 .hide {
     display: none;
+}
+
+@media screen and (max-width: 400px){
+    .steps-page {
+        display:inline-block;
+        margin-left: 0px;
+        margin-top: -100px;
+    }
+
+    .step-wrapper{
+        display: inline;
+        width: 40px;
+        height: 5px;
+    }
+
+    .text-container {
+        display: none;
+    }
+
+    .number-bubble-highlighted {
+        color: black;
+        flex: -1;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .number-bubble {
+        height: 36px;
+        width: 36px;
+        border-radius: 60px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        flex: -1;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .number {
+        margin-left: 13px;
+        margin-top: 8px;
+        font-weight: 600;
+    }
 }

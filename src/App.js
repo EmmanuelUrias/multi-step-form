@@ -8,8 +8,8 @@ import './App.css'
 
 function App() {
   return (
-    <div className="form-page">
-      <SideBar />
+    <div className="page">
+      {/* <SideBar /> */}
       <Routes> 
         <Route path='/' exact element={<YourInfo />}/>
         <Route path='/select-plan' exact element={<SelectPlan />}/>

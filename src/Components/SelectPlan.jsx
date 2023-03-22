@@ -2,16 +2,37 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import GoBackBtn from './GoBackBtn'
 import NextStepBtn from './NextStepBtn'
+import SideBarSteps from './SideBarSteps'
 import './Styles/SelectPlan.css'
 
 function SelectPlan() {
+  const [showStep1, setShowStep1] = useState(false)
+  const [showStep2, setShowStep2] = useState(true)
+  const [showStep3, setShowStep3] = useState(false)
+  const [showStep4, setShowStep4] = useState(false)
+
   const [selectedPlan, setSelectedPlan] = useState(null)
+
+  const [isBlue, setIsBlue] = useState(true)
   
   const handleClick = (plan) => {
     setSelectedPlan(plan)
   }
 
+   const handleClickOrUnclick = (blue, setBlue) => {
+     setBlue(prevState => !prevState);
+   }
+
   return (
+    <div className='form-page'>
+        <div>
+        <SideBarSteps
+         showStep1 = {showStep1}
+         showStep2 = {showStep2}
+         showStep3 = {showStep3}
+         showStep4 = {showStep4}
+         />
+      </div>
     <div className='select-plan-page'>
       <div className='title'>
           <h1>Select your plan</h1>
@@ -35,12 +56,12 @@ function SelectPlan() {
         </div>
       </div>
       <div className='toggle-switch'>
-        <h1>Monthly</h1>
+        <h1 className={isBlue ? 'toggle-switch-h1-blue' : 'toggle-switch-h1'}>Monthly</h1>
       <label class="switch">
-       <input type="checkbox" />
+       <input type="checkbox" onClick={() =>handleClickOrUnclick(isBlue, setIsBlue)}/>
         <span class="slider"></span>
       </label>
-      <h1>Yearly</h1>   
+      <h1 className={isBlue ? 'toggle-switch-h1' : 'toggle-switch-h1-blue'}>Yearly</h1>   
      </div>
       <div className='go-back-btn'>
         <GoBackBtn />
@@ -50,6 +71,7 @@ function SelectPlan() {
           <NextStepBtn />
         </Link>
       </div>
+    </div>
     </div>
   )
 }

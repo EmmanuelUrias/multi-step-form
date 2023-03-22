@@ -2,10 +2,14 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import NextStepBtn from './NextStepBtn'
 import GoBackBtn from './GoBackBtn'
+import SideBarSteps from './SideBarSteps'
 import './Styles/AddOns.css'
 
 function AddOns() {
-  // const [addOn, setAddOn] = useState(false)
+  const [showStep1, setShowStep1] = useState(false)
+  const [showStep2, setShowStep2] = useState(false)
+  const [showStep3, setShowStep3] = useState(true)
+  const [showStep4, setShowStep4] = useState(false)
 
   const [onlineService, setOnlineService] = useState(false);
   const [largerStorage, setLargerStorage] = useState(false);
@@ -17,6 +21,16 @@ function AddOns() {
   }
 
   return (
+    <div className='form-page'>
+             <div>
+        <SideBarSteps
+         showStep1 = {showStep1}
+         showStep2 = {showStep2}
+         showStep3 = {showStep3}
+         showStep4 = {showStep4}
+         />
+      </div>
+
     <div className='add-ons-page'>
       <div className='title-text'>
         <h1>Pick add-ons</h1>
@@ -56,6 +70,7 @@ function AddOns() {
           <NextStepBtn />
         </Link>
       </div>
+    </div>
     </div>
   )
 }

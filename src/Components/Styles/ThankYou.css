@@ -14,17 +14,27 @@
 }
 
 .thank-you-text {
+    font-family: "Gill Sans", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 35px;
+    color: rgb(5, 5, 77);
+}
+
+.thank-you-text h1 {
+    font-weight: 600;
+    font-size: 36px;
+
 }
 
 .thank-you-text h3{
-    font-size: 17px;
+    font-size: 18px;
     margin-top: -7px;
-    width: 500px;
+    width: 480px;
     text-align: center;
-    color: gray;
+    color: #797979c3;
+    font-weight: 600;
+
 }
