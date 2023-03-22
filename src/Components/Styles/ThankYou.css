@@ -1,0 +1,30 @@
+.thank-you-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.thank-you-icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 24px;
+    margin-top: 180px;
+}
+
+.thank-you-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.thank-you-text h3{
+    font-size: 17px;
+    margin-top: -7px;
+    width: 500px;
+    text-align: center;
+    color: gray;
+}

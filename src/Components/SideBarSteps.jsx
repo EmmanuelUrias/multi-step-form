@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import './Styles/SideBarSteps.css'
 
 
 function SideBarSteps(props) {
     const showPage = props.showPage
     const key = props.id
+
+    const path = useParams()
 
   return (
     <div className='steps-page' key={key}>
