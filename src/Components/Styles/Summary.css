@@ -113,3 +113,94 @@
 .summary-confirm-btn button:hover {
     opacity: .65;
 }
+
+@media screen and (max-width: 600px) {
+    .form-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary-thankyou-page {
+        margin-left: 22px;
+        margin-top: -70px;
+        padding: 15px 25px;
+        background-color: white;
+        border-radius: 12px;
+        width: 280px;
+    }
+
+    .summary-page {
+        margin-left: -15px;
+        margin-top: -15px;
+        padding: 15px 25px;
+        background-color: white;
+        border-radius: 12px;
+        width: 280px;
+    }
+
+    .plan-summary h2 {
+        font-size: 17px;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+    .plan-selection{
+        margin-left: 5px;
+    }
+    .plan-selection h1{
+        font-size: 17px;
+        color: rgb(1, 1, 99);
+    }
+    .plan-selection a {
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .border-line {
+        border-bottom: 2px solid rgba(193, 191, 191, 0.5);
+        width: 238px;
+        margin-left: 18px;
+    }
+    
+    .total-price {
+        padding-bottom: 5px;
+        margin-top: 25px;
+    }
+
+    .summary-add-on {
+        margin-left: 20px;
+    }
+    .summary-add-on h1{
+        font-size: 17px;
+        color: #797979c3;
+        font-weight: 600;
+    }
+    .summary-add-on-price-1 {
+        font-size: 15px;
+        margin-left: 68px;
+    }
+    .summary-add-on-price-2 {
+        font-size: 15px;
+        margin-left: 65px;
+    }
+    
+    .price-summary{
+        display: flex;
+        flex-direction: row;
+        margin-left: 18px;
+        margin-top: 10px;
+    }
+    .price-summary h1 {
+        font-size: 16px;
+    }
+    .price-summary h2 {
+        font-size: 18px;
+        margin-left: 27px;
+        margin-top: 10px;
+    
+    }
+
+    .summary-confirm-btn {
+        margin-left: 165px;
+    }
+}
+
